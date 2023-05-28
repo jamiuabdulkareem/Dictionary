@@ -98,7 +98,6 @@ html {
     .search__input:focus {
       outline: none; }
     .search__input::placeholder {
-      padding-left: 3rem;
       color: #025464; }
   .search__btn {
     border: none;

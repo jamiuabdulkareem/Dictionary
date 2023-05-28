@@ -58,21 +58,6 @@ const displayResult = function (data) {
           </div>
   `;
 
-  {
-    /* nounItem.foreach(function (list) {
-    return  `
-    <div class="results__defination">
-    <h2>Noun</h2>
-    <span>Meaning</span>
-    <ol class="results__defination--list">
-      <li>${list}</li>
-    </ol>
-    `;
-  }); */
-  }
-
-  // const html = `<p>${meaning.definition}</p>`;
-
   resultContainer.innerHTML = "";
   resultContainer.insertAdjacentHTML("afterbegin", markup);
 };
