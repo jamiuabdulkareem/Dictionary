@@ -14,6 +14,19 @@ const loadSpinner = function () {
   resultContainer.insertAdjacentHTML("afterbegin", markup);
 };
 
+// Display error message
+
+const errorMessage = function () {
+  const markup = `
+  <div class="errorMsg">
+    <ion-icon name="warning-outline"></ion-icon>
+    <p>We could not find definitions for the word you were looking for <br> You can try the search again or head to the web instead.</p>
+  </div>
+  `;
+  resultContainer.innerHTML = "";
+  resultContainer.insertAdjacentHTML("afterbegin", markup);
+};
+
 // Display search results
 const displayResult = function (data) {
   console.log(data);
@@ -71,10 +84,8 @@ const api = async function (word) {
     const data = await url.json();
     displayResult(data[0]);
   } catch (err) {
-    console.log(
-      "we could not find definitions for the word you were looking for"
-    );
-    throw err;
+    errorMessage();
+    // throw err;
   }
 };
 
