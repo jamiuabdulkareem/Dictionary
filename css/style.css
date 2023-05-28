@@ -157,3 +157,16 @@ footer {
   font-size: 2.4rem;
   font-weight: 300;
   text-align: center; }
+
+.errorMsg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 1.6rem; }
+  .errorMsg p {
+    font-size: 1.8rem;
+    font-weight: 200;
+    color: red; }
+  .errorMsg ion-icon {
+    font-size: 3rem;
+    color: red; }

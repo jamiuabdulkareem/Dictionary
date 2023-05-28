@@ -48,6 +48,24 @@ footer {
   text-align: center;
 }
 
+.errorMsg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 1.6rem;
+
+  p {
+    font-size: 1.8rem;
+    font-weight: 200;
+    color: red;
+  }
+
+  ion-icon {
+    font-size: 3rem;
+    color: red;
+  }
+}
+
 // - FONT SIZE SYSTEM (px)
 // 10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
 

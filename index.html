@@ -11,14 +11,21 @@
   </head>
   <body>
     <main class="main">
+      <form >
       <label class="search" for="search__input">
           <input class="search__input" type="text" id="search_input" placeholder="Search for a world"/>
           <button class="search__btn" type="submit" id="btn">
             <ion-icon class="search__btn--icon" name="search-outline" ></ion-icon>
           </button>
         </label>
+      </form>
         <section class="results">
           <p class="welcome__text">What word do you want to look up?</p>
+
+          <!-- <div class="errorMsg">
+            <ion-icon name="warning-outline"></ion-icon>
+            <p>We could not find definitions for the word you were looking for <br> You can try the search again or head to the web instead.</p>
+          </div> -->
 
           <!-- <div class="spinner">
             <div class="custom-loader"></div>

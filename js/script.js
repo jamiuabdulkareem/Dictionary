@@ -71,7 +71,10 @@ const api = async function (word) {
     const data = await url.json();
     displayResult(data[0]);
   } catch (err) {
-    console.log(err);
+    console.log(
+      "we could not find definitions for the word you were looking for"
+    );
+    throw err;
   }
 };
 
