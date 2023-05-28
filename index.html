@@ -5,18 +5,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dictionary | Jamiu Abidemi</title>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <main>
-      <form>
-        <input type="text" id="searchInput" />
-        <button type="submit" id="btn">Search</button>
+    <main class="main">
+      <label class="search" for="search__input">
+          <input class="search__input" type="text" id="search_input" placeholder="Search for a world"/>
+          <button class="search__btn" type="submit">
+            <ion-icon class="search__btn--icon" name="search-outline"></ion-icon>
+          </button>
+        </label>
+        <section class="results">
+          <!-- <p class="welcome__text">What word do you want to look up?</p> -->
+          <div class="results__word">
+            <div class="results__word--heading">
+              <h1>Class</h1>
+              <p>/Klahs/</p>
+            </div>
+            <div>
+              <button class="results__word-play--btn">
+                <ion-icon class="results__word-play--btn-icon" name="play"></ion-icon>
+              </button>
+            </div>
+          </div>
+          <hr>
+        </section>
       </form>
-      <div id="result">
-        <p></p>
-      </div>
     </main>
 
-    <script defer src="script.js"></script>
+    <script defer src="js/script.js"></script>
   </body>
 </html>

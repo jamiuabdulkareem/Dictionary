@@ -1,0 +1,113 @@
+/* 
+
+--- 01 TYPOGRAPHY SYSTEM
+
+- SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+- Font weights:
+Defaults: 400
+Medium: 500
+Semi-bold: 600
+Bold: 700
+
+- Line heights:
+Default: 
+Small: 
+medius: 
+Paragraph default: 
+
+- Letter spacing
+
+- FONT SIZE SYSTEM (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+- Spacing system (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+*/
+@import url("https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  font-family: "Kanit", sans-serif;
+  color: #012a32; }
+
+html {
+  font-size: 62.5%; }
+
+.results__word--heading h1 {
+  font-size: 6.2rem;
+  font-weight: 600; }
+
+.results__word--heading p {
+  font-size: 2.4rem;
+  color: #025464;
+  font-weight: 300; }
+
+.results__word-play--btn {
+  padding: 1.6rem;
+  border-radius: 50px;
+  border: none;
+  background-color: #ccdde0;
+  box-shadow: 2px 3px 12px 0px rgba(0, 0, 0, 0.5);
+  transition: all 0.3s;
+  cursor: pointer; }
+  .results__word-play--btn-icon {
+    font-size: 3.2rem;
+    color: #025464; }
+  .results__word-play--btn:hover {
+    box-shadow: none; }
+
+.search {
+  display: flex;
+  align-items: center;
+  border: 1px solid transparent;
+  padding: 0.2rem;
+  background-color: #f4f4f4;
+  border-radius: 10px; }
+  .search__input {
+    border: none;
+    margin: 0;
+    padding: 0.7rem 0.8rem;
+    width: 100%;
+    background-color: #f4f4f4; }
+    .search__input:focus {
+      outline: none; }
+    .search__input::placeholder {
+      padding-left: 3rem;
+      color: #025464; }
+  .search__btn {
+    border: none;
+    background-color: #f4f4f4;
+    overflow: hidden;
+    margin-right: 2.4rem;
+    cursor: pointer; }
+    .search__btn--icon {
+      font-size: 2.4rem;
+      color: #025464; }
+
+.results__word {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+
+.main {
+  max-width: 120rem;
+  padding: 0 3.2rem;
+  padding-top: 3.2rem;
+  margin: 0 auto; }
+
+.results {
+  margin-top: 4.8rem; }
+
+.welcome__text {
+  text-align: center;
+  font-size: 3rem;
+  color: #012a32; }
+
+hr {
+  color: #979797;
+  margin-top: 1.2rem; }

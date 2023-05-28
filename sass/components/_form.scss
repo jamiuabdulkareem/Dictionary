@@ -1,0 +1,38 @@
+.search {
+  display: flex;
+  align-items: center;
+  border: 1px solid transparent;
+  padding: 0.2rem;
+  background-color: $color-gray-light--2;
+  border-radius: 10px;
+
+  &__input {
+    border: none;
+    margin: 0;
+    padding: 0.7rem 0.8rem;
+    width: 100%;
+    background-color: $color-gray-light--2;
+
+    &:focus {
+      outline: none;
+    }
+
+    &::placeholder {
+      padding-left: 3rem;
+      color: $secondary-color--light;
+    }
+  }
+
+  &__btn {
+    border: none;
+    background-color: $color-gray-light--2;
+    overflow: hidden;
+    margin-right: 2.4rem;
+    cursor: pointer;
+
+    &--icon {
+      font-size: 2.4rem;
+      color: $secondary-color--light;
+    }
+  }
+}

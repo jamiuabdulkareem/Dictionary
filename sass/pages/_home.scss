@@ -1,0 +1,29 @@
+.main {
+  max-width: 120rem;
+  padding: 0 3.2rem;
+  padding-top: 3.2rem;
+  margin: 0 auto;
+  //   background-color: #ffff;
+}
+
+.results {
+  margin-top: 4.8rem;
+}
+
+.welcome__text {
+  text-align: center;
+  font-size: 3rem;
+  color: $secondary-color;
+}
+
+hr {
+  color: $color-gray-dark;
+  margin-top: 1.2rem;
+}
+
+// - FONT SIZE SYSTEM (px)
+// 10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+// - Spacing system (px)
+// 2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+//
