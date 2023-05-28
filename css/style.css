@@ -40,7 +40,8 @@ html {
 
 .results__word--heading h1 {
   font-size: 6.2rem;
-  font-weight: 600; }
+  font-weight: 600;
+  text-transform: capitalize; }
 
 .results__word--heading p {
   font-size: 2.4rem;
@@ -51,7 +52,8 @@ html {
   margin-top: 2.4rem; }
   .results__defination h2 {
     font-size: 2.4rem;
-    font-weight: 500; }
+    font-weight: 500;
+    text-transform: capitalize; }
   .results__defination--verb {
     margin-top: 2.6rem; }
   .results__defination span {
@@ -64,7 +66,7 @@ html {
     .results__defination--list li {
       font-size: 1.8rem;
       font-weight: 300;
-      margin-bottom: 1.2rem; }
+      margin-bottom: 0.8rem; }
 
 .results__word-play--btn {
   padding: 1.6rem;

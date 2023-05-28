@@ -3,12 +3,29 @@ const resultContainer = document.querySelector(".results");
 const searchInput = document.querySelector(".search__input");
 const btn = document.querySelector("#btn");
 
+// Display loading spinner
+const loadSpinner = function () {
+  const markup = `
+     <div class="spinner">
+        <div class="custom-loader"></div>
+      </div>
+  `;
+  resultContainer.innerHTML = "";
+  resultContainer.insertAdjacentHTML("afterbegin", markup);
+};
+
 // Display search results
 const displayResult = function (data) {
   console.log(data);
+
+  // Noun
   const noun = data.meanings[0].definitions;
   const nounItem = noun.slice(0, 4).map((i) => `<li>${i.definition}</li>`);
   // console.log(meaning.definition);
+
+  // Verb
+  const verb = data.meanings[1].definitions;
+  const verbItem = verb.slice(0, 4).map((i) => `<li>${i.definition}</li>`);
 
   const markup = `
   <div class="results__word">
@@ -25,11 +42,20 @@ const displayResult = function (data) {
           <hr>
 
           <div class="results__defination">
-            <h2>Noun</h2>
+            <h2>${data.meanings[0].partOfSpeech}</h2>
             <span>Meaning</span>
             <ol class="results__defination--list">
               ${nounItem}
             </ol>
+
+            <div class="results__defination--verb">
+            <h2>${data.meanings[1].partOfSpeech}</h2>
+            <span>Meaning</span>
+            <ol class="results__defination--list">
+              ${verbItem}
+            </ol>
+          </div>
+          </div>
   `;
 
   {
@@ -47,7 +73,7 @@ const displayResult = function (data) {
 
   // const html = `<p>${meaning.definition}</p>`;
 
-  // resultContainer.innerHTML = "";
+  resultContainer.innerHTML = "";
   resultContainer.insertAdjacentHTML("afterbegin", markup);
 };
 
@@ -64,12 +90,10 @@ const api = async function (word) {
   }
 };
 
-api("class");
-
 // Handle event listener
 btn.addEventListener("click", function (e) {
   e.preventDefault();
-  document.querySelector(".spinner").style.display = "";
+  loadSpinner();
   api(searchInput.value);
   searchInput.value = "";
 });
