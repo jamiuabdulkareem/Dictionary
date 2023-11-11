@@ -1,6 +1,6 @@
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import Home from "./ui/AppLayout";
-import Meaning from "./ui/Meaning";
+import Meaning, {loader} from "./ui/Meaning";
 
 const router = createBrowserRouter([
   {
@@ -10,8 +10,9 @@ const router = createBrowserRouter([
 
     children: [
       {
-        path: "/:mean?",
-        element: <Meaning />
+        path: "/mean/:id",
+        element: <Meaning />,
+        loader: loader
       }
     ]
   },

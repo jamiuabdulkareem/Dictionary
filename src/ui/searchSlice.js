@@ -2,7 +2,7 @@ import { createSlice } from "@reduxjs/toolkit"
 
 const initialState = {
    word: "",
-   meaning: {},
+   
 }
 
 const searchSlice = createSlice({
@@ -12,9 +12,7 @@ const searchSlice = createSlice({
       searchWord(state, action) {
          state.word = action.payload
       },
-      getDefination(state, action) {
-         state.meaning = action.payload
-      }
+      
    }
 })
 

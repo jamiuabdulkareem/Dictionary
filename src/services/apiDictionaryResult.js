@@ -1,3 +1,5 @@
+import { useDispatch } from "react-redux";
+
 const API_URL ="https://api.dictionaryapi.dev/api/v2/entries/en";
 
 export default async function getMeaning(word) {
@@ -8,3 +10,6 @@ export default async function getMeaning(word) {
    const data = await res.json();
    return data[0];
 }
+
+
+
