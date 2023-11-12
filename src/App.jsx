@@ -1,6 +1,6 @@
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import Home from "./ui/AppLayout";
-import Meaning, {loader} from "./ui/Meaning";
+import Meaning, { loader } from "./ui/Meaning";
 
 const router = createBrowserRouter([
   {
@@ -12,9 +12,10 @@ const router = createBrowserRouter([
       {
         path: "/mean/:id",
         element: <Meaning />,
-        loader: loader
-      }
-    ]
+        loader: loader,
+        errorElement: <p>Hi there is error</p>,
+      },
+    ],
   },
 ]);
 
