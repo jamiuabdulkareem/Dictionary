@@ -3,7 +3,7 @@ import SearchBar from "./SearchBar";
 import Loader from "./Loader";
 import getMeaning from "../services/apiDictionaryResult";
 
-function Home() {
+function AppLayout() {
   const navigation = useNavigation();
   const isLoading = navigation.state === "loading";
   getMeaning();
@@ -19,4 +19,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default AppLayout;
